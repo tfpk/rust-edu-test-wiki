@@ -1,0 +1,72 @@
+name: Add New Course
+description: This is for adding a new course to our list.
+title: "[Course]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to add your course. This form is for any
+        course run by a university that teaches or involves Rust. It does not
+        have to be a "rust course", anything that involves using rust at any
+        point would be great to reference here.
+  - type: input
+    id: course_name
+    attributes:
+      label: Name of Course
+      description: What is the official name of the course?
+      placeholder: ex. Rust Programming 101
+    validations:
+      required: true
+  - type: input
+    id: course_code
+    attributes:
+      label: Course Code/Reference
+      description: If the course has a code or reference, please provide it.
+      placeholder: ex. COMP1234
+    validations:
+      required: false
+  - type: input
+    id: institution_name
+    attributes:
+      label: Name of Institution
+      description: What is the name of the institution offering the course?
+      placeholder: University of the Internet
+    validations:
+      required: true
+  - type: input
+    id: focus_areas
+    attributes:
+      label: Focus of the Course
+      description: If your course is focusing on an area of computer science, what area?
+      placeholder: "Programming Languages/Operating Systems/PL Theory"
+    validations:
+      required: false
+  - type: input
+    id: summary
+    attributes:
+      label: Summary of your Course
+    validations:
+      required: false
+  - type: checkboxes
+    id: focus_areas
+    attributes:
+      label: Target Audience
+      description: Who is the course designed for?
+      options:
+        - label: Non-CS Students
+        - label: First-Year CS Students
+        - label: Bachelors CS Students
+        - label: Honors CS Students
+        - label: Masters CS Students
+  - type: input
+    id: link
+    attributes:
+      label: Link to Course Website/Further Info
+    validations:
+      required: true
+  - type: textarea
+    id: other_info
+    attributes:
+      label: Any other relevant information
+      description: Let us know if there is any other information we should know about your course.
