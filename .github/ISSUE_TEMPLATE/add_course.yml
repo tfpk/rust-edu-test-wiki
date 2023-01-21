@@ -4,6 +4,7 @@ title: "[Course]: "
 labels: []
 body:
   - type: markdown
+    id: info
     attributes:
       value: |
         Thanks for taking the time to add your course. This form is for any
