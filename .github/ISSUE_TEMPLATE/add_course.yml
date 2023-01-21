@@ -50,7 +50,7 @@ body:
     validations:
       required: false
   - type: checkboxes
-    id: focus_areas
+    id: audience
     attributes:
       label: Target Audience
       description: Who is the course designed for?
